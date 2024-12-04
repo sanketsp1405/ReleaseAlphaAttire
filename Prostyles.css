@@ -1,0 +1,180 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 75%;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+/* Card Styles */
+.card {
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px #c7c7c7, -10px -10px 20px #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    width: 400px;
+    height: 500px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    max-width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+.card p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.card p:first-of-type {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.add-to-cart, 
+.add-to-wishlist {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 12px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.add-to-cart {
+    background-color: #28a745;
+}
+
+.add-to-wishlist {
+    background-color: #ff4081;
+}
+
+.add-to-cart:hover,
+.add-to-wishlist:hover {
+    background-color: #333;
+    opacity: 0.9;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 240px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px #c7c7c7, -10px -10px 20px #ffffff;
+    margin-right: 20px;
+    position: sticky;
+    top: 20px;
+    height: auto;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.sidebar h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.sidebar label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    color: #333;
+}
+
+.sidebar select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    color: #333;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease-in-out;
+}
+
+.sidebar select:hover {
+    border-color: #007bff;
+}
+
+/* Button Hover Effects */
+button.add-to-cart:hover {
+    background-color: #1e7e34;
+}
+
+button.add-to-wishlist:hover {
+    background-color: #d6336c;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card img {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .card img {
+        height: 180px;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

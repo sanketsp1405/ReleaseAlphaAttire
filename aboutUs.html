@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - AlphaAttire</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic styling for About Us page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        .about-section, .team-section {
+            padding: 50px;
+            text-align: center;
+        }
+        .about-header {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .about-description {
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .team-section h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+        .team-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .team-member {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 250px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 2px solid #ddd;
+            background-color: #e7f3fe; /* Light blue background */
+        }
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+            background-color: #d4eaff; /* Slightly darker blue */
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+           /* Graphic outline */
+        }
+        .team-member h3 {
+            margin-top: 15px;
+            color: #333;
+            font-weight: bold;
+        }
+        .team-member p {
+            font-size: 1em;
+            color: #555;
+            margin-top: 10px;
+        }
+        /* Add graphic elements */
+        .team-section {
+            background: linear-gradient(90deg, #003366, #3399ff);/* Blue background for team section */
+            color: #fff;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+        }
+        .team-section h2 {
+            color: #fff;
+        }
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .team-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- About Us Section -->
+    <div class="about-section">
+        <h1 class="about-header">About Us</h1>
+        <p class="about-description">
+            In the digital age, e-commerce has reshaped the way consumers shop and businesses operate. The rise of online shopping has set new expectations for consumers, demanding convenience, variety, and accessibility with just a few clicks. To meet these growing needs, the AlphaAttire project aims to create a robust e-commerce platform that not only addresses these consumer demands but also provides businesses with a powerful tool to showcase and sell their products online.
+        </p>
+        <p class="about-description">
+            AlphaAttire will be built with a focus on delivering an exceptional user experience, robust security, and scalability to ensure the platform can grow with the business and handle increasing traffic and transactions. The website will offer an intuitive, user-friendly interface that enhances shopping ease while ensuring secure transactions and data protection. Designed to meet the needs of both consumers and businesses, AlphaAttire will provide a seamless, efficient, and enjoyable online shopping experience.
+        </p>
+    </div>
+
+    <!-- Team Section -->
+    <div class="team-section">
+        <h2>Meet Our Team</h2>
+        <div class="team-container">
+            <!-- Team Member 1 -->
+            <div class="team-member">
+                <img src="images/Sanket.jpg" alt="Sanket Satish Patil">
+                <h3>Sanket Satish Patil</h3>
+                <p>Project Lead</p>
+                <p>Sanket is the leads the development team, focusing on building scalable and secure back-end systems for AlphaAttire, ensuring seamless online shopping..</p>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="team-member">
+                <img src="images/prem.jpeg" alt="Prem Desale">
+                <h3>Prem Desale</h3>
+                <p>Member-1</p>
+                <p>Prem  is responsible for creating the database </p>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="team-member">
+                <img src="images/swaroop.jpg" alt="Swaroop More">
+                <h3>Swaroop More</h3>
+                <p>Member-2</p>
+                <p>Swaroop is responsible for creating the beautiful and user-friendly design of AlphaAttire, making sure that every customer’s experience is enjoyable.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="productpage.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="TrendBro Logo"> <!-- Ensure you provide the correct path for the logo image -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Topwear</a>
+                    <ul class="dropdown">
+                        <li><a href="T-shirts.html">T-Shirts</a></li>
+                        <li><a href="FormalShirts.html">Formal Shirts</a></li>
+                        <li><a href="shirts.html">Casual Shirts</a></li>
+                        <li><a href="SweatShirts.html">Sweatshirts</a></li>
+                        <li><a href="suit.html">Suits</a></li>
+                        <li><a href="LeatherJacket.html">Jackets</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Bottomwear</a>
+                    <ul class="dropdown">
+                        <li><a href="Jeans.html">Jeans</a></li>
+                        <li><a href="CasualTrouser.html">Casual Trousers</a></li>
+                        <li><a href="FormalTrousers.html">Formal Trousers</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">FestiveWear</a>
+                    <ul class="dropdown">
+                        <li><a href="Kurtis&KurtaSets.html">Kurtis & Kurta Sets</a></li>
+                        <li><a href="Sherwanis.html">Sherwanis</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Footwear</a>
+                    <ul class="dropdown">
+                        <li><a href="FormalShoes.html">Formal Shoes</a></li>
+                        <li><a href="Sneakers.html">Sneakers</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Accessories</a>
+                    <ul class="dropdown">
+                        <li><a href="Watchs.html">Watches</a></li>
+                        <li><a href="Bracelet.html">Bracelet</a></li>
+                        <li><a href="Perfumes.html">Perfumes</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <button type="submit">&#128269;</button>
+        </div>
+        <div class="user-icons">
+            <a href="#">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M12.75 20.66l6.184-7.098c2.677-2.884 2.559-6.506.754-8.705-.898-1.095-2.206-1.816-3.72-1.855-1.293-.034-2.652.43-3.963 1.442-1.315-1.012-2.678-1.476-3.973-1.442-1.515.04-2.825.76-3.724 1.855-1.806 2.201-1.915 5.823.772 8.706l6.183 7.097c.19.216.46.34.743.34s.553-.124.743-.34Z" />
+                </svg>
+            </a>
+            <a href="cart.html">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312" />
+                </svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"
+                    class="bi bi-file-person">
+                    <path
+                        d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                </svg>
+            </a>
+            <div class="dropdown">
+                <a href="signin.html">Sign up / Login</a>
+                <a href="about.html">About</a>
+                <a href="myorders.html">My Orders</a>
+                <a href="blog.html">Blog</a>
+                <a href="#footer-container">Contact</a>
+            </div>
+        </div>
+    </header>
+    <div class="product-detail">
+        <div class="product-images">
+            <img id="productImage" src="path/to/product-image.png" alt="Product Image">
+            <div class="thumbnail-images">
+                <img id="thumbnail1" src="path/to/thumbnail1.png" alt="Thumbnail 1" onclick="changeImage(this)">
+                <img id="thumbnail2" src="path/to/thumbnail2.png" alt="Thumbnail 2" onclick="changeImage(this)">
+                <img id="thumbnail3" src="path/to/thumbnail3.png" alt="Thumbnail 3" onclick="changeImage(this)">
+            </div>
+        </div>
+        <span id="description">
+            <h2 id="productName">Product Name</h2>
+            <p><b>Price:</b> ₹<span id="productPrice">Price</span></p>
+            <p><b>Brand:</b> <span id="productBrand">Brand Name</span></p>
+            <p><b>Description:</b> <span id="productDescription">This is a great product.</span></p>
+
+         
+
+            <h3>Best Offers:</h3>
+            <ul id="bestOffers">
+                <li>Get 10% off on your first purchase.</li>
+                <li>Buy 2 get 1 free on selected items.</li>
+                <li>Free shipping on orders over ₹2000.</li>
+            </ul>
+
+            <div class="button-container">
+                <button class="button button1"  onclick="addToCart()">ADD TO CART</button>
+                <button class="button button2">BUY NOW</button>
+            </div>
+            <h3>Customer Reviews:</h3>
+            <div id="customerReviews">
+                <p><b>Devil:</b> Great fit, very comfortable. ★★★★★</p>
+                <p><b>Suraj:</b> Good quality, but the color faded after a few washes. ★★★☆☆</p>
+                <p><b>Sanket:</b> Excellent value for money! ★★★★☆</p>
+            </div>
+        </span>
+    </div>
+
+    <script src="productpage.js"></script>
+</body>
+
+</html>

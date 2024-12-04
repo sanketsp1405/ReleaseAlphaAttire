@@ -1,0 +1,303 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    margin-left: 15%;
+    margin-top: 2%;
+}
+
+/* Product Detail Styles */
+.product-detail {
+    display: flex;
+    max-width: 1250px;
+    margin: 0 auto;
+    margin-right: 30%;
+    gap: 10%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.product-detail img {
+    width: 350px;
+    height: auto;
+}
+
+.product-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thumbnail-images img {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail-images img:hover {
+    transform: scale(1.1);
+    border-color: #000;
+}
+
+.product-detail div {
+    max-width: auto;
+    margin: 20px;
+}
+
+.product-detail h1 {
+    margin-bottom: 30px;
+}
+
+.product-detail p {
+    font-size: 20px;
+}
+
+/* Button Styles */
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    margin-top: 10%;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #04AA6D;
+}
+
+.button1:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+/* Additional Styles */
+h3 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+ul#bestOffers {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+#customerReviews {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    width: 700px;
+    margin-top: 2%;
+    display: flex;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.button {
+    flex: 1;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+.button1 {
+    background-color: #04AA6D;
+    color: white;
+    border: 2px solid #04AA6D;
+}
+
+.button1:hover {
+    background-color: #048A59;
+}
+
+.button2 {
+    background-color: #008CBA;
+    color: white;
+    border: 2px solid #008CBA;
+}
+
+.button2:hover {
+    background-color: #007AA3;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    margin-right: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+header .search {
+    display: flex;
+    align-items: center;
+    margin-left: 6%;
+}
+
+header .search input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    height: 20px;
+    width: 300px;
+}
+
+header .search button {
+    padding: 2px;
+    border: none;
+    background-color: #cbc4c4;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    height: 35px;
+}
+
+header .user-icons a {
+    margin: 2px;
+   
+}
+
+header .user-icons img {
+    height: 20px;
+    
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+nav ul .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+nav ul .dropdown li {
+    width: 200px;
+}
+
+nav ul .dropdown li a {
+    padding: 10px;
+    color: #000;
+}
+
+nav ul .dropdown li a:hover {
+    background-color: #ddd;
+}
+
+nav ul li:hover > a {
+    background-color: #f0f0f0;
+}
+.user-icons .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1;
+    min-width: 160px;
+     /* Adjust the width if needed */
+}
+
+.user-icons:hover .dropdown {
+    display: block;
+}
+
+.user-icons .dropdown a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+.user-icons .dropdown a:hover {
+    background-color: #f2f2f2;
+}
+
+.logo img {
+    cursor: pointer;
+}
